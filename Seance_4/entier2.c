@@ -10,13 +10,13 @@ void signedInts()
   int64_t i64;
 
   printf("\n");
-  printf("sizeof(int8_t)    =  %zd  min = %"PRId8" max = %"PRId8"\n", \
+  printf("sizeof(int8_t)    =  %zd  min = %"PRId8" max = %"PRId8"\n",
           sizeof(i8), INT8_MIN, INT8_MAX);
-  printf("sizeof(int16_t)   =  %zd  min = %"PRId16" max = %"PRId16"\n", \
+  printf("sizeof(int16_t)   =  %zd  min = %"PRId16" max = %"PRId16"\n",
           sizeof(i16), INT16_MIN, INT16_MAX);
-  printf("sizeof(int32_t)   =  %zd  min = %"PRId32" max = %"PRId32"\n", \
+  printf("sizeof(int32_t)   =  %zd  min = %"PRId32" max = %"PRId32"\n",
           sizeof(i32), INT32_MIN, INT32_MAX);
-  printf("sizeof(int64_t)   =  %zd  min = %"PRId64" max = %"PRId64"\n", \
+  printf("sizeof(int64_t)   =  %zd  min = %"PRId64" max = %"PRId64"\n",
           sizeof(i64), INT64_MIN, INT64_MAX);
 
   printf("\n");
