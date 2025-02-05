@@ -1,10 +1,7 @@
 #include <stdio.h>
 #include <stdint.h>
+#include <inttypes.h>
 
-#define printInfo(bytes) \
-  printf("sizeof(int%d_t)   =  %zd  min = %I"#bytes"d max = %I"#bytes"d\n", \
-          bytes, sizeof(int##bytes##_t), INT##bytes##_MIN, INT##bytes##_MAX)
-   
 void signedInts()
 {
   int8_t i8;
@@ -13,14 +10,14 @@ void signedInts()
   int64_t i64;
 
   printf("\n");
-  printf("sizeof(int8_t)    =  %zd  min = %lld max = %lld\n", \
-          sizeof(int8_t), (long long) INT8_MIN, (long long) INT8_MAX);
-  printf("sizeof(int16_t)   =  %zd  min = %lld max = %lld\n", \
-          sizeof(int16_t), (long long) INT16_MIN, (long long) INT16_MAX);
-  printf("sizeof(int32_t)   =  %zd  min = %lld max = %lld\n", \
-          sizeof(int32_t), (long long) INT32_MIN, (long long) INT32_MAX);
-  printf("sizeof(int64_t)   =  %zd  min = %lld max = %lld\n", \
-          sizeof(int64_t), (long long) INT64_MIN, (long long) INT64_MAX);
+  printf("sizeof(int8_t)    =  %zd  min = %"PRId8" max = %"PRId8"\n", \
+          sizeof(i8), INT8_MIN, INT8_MAX);
+  printf("sizeof(int16_t)   =  %zd  min = %"PRId16" max = %"PRId16"\n", \
+          sizeof(i16), INT16_MIN, INT16_MAX);
+  printf("sizeof(int32_t)   =  %zd  min = %"PRId32" max = %"PRId32"\n", \
+          sizeof(i32), INT32_MIN, INT32_MAX);
+  printf("sizeof(int64_t)   =  %zd  min = %"PRId64" max = %"PRId64"\n", \
+          sizeof(i64), INT64_MIN, INT64_MAX);
 
   printf("\n");
 }
@@ -33,10 +30,10 @@ void unsignedInts()
   uint64_t ui64;
 
   printf("\n");
-  printf("sizeof(uint8_t)  = %zd  min = %ld max = %lld\n", sizeof(ui8), 0,(long long) (long long) UINT8_MAX);
-  printf("sizeof(uint16_t) = %zd  min = %lld max = %lld\n", sizeof(ui16),(long long) 0,(long long) UINT16_MAX);
-  printf("sizeof(uint32_t) = %zd  min = %lld max = %lld\n", sizeof(ui32),(long long) 0,(long long) UINT32_MAX);
-  printf("sizeof(uint64_t) = %zd  min = %lld max = %lld\n", sizeof(ui64),(long long) 0,(long long) UINT64_MAX);
+  printf("sizeof(uint8_t)  = %zd  min = %"PRIu8" max = %"PRIu8"\n", sizeof(ui8), 0, UINT8_MAX);
+  printf("sizeof(uint16_t) = %zd  min = %"PRIu16" max = %"PRIu16"\n", sizeof(ui16), 0, UINT16_MAX);
+  printf("sizeof(uint32_t) = %zd  min = %"PRIu32" max = %"PRIu32"\n", sizeof(ui32), 0, UINT32_MAX);
+  printf("sizeof(uint64_t) = %zd  min = %"PRIu64" max = %"PRIu64"\n", sizeof(ui64), 0, UINT64_MAX);
   printf("\n");
 }
 
