@@ -1,0 +1,18 @@
+code=ex1.exe
+
+all: ${code}
+
+${code}: main.o A.o B.o
+	gcc $^ -o $@
+
+main.o: main.c A.h B.h
+	gcc -c $<
+
+A.o: A.c A.h
+	gcc -c $<
+
+B.o: B.c B.h
+	gcc -c $<
+
+clean:
+	rm -f main.o A.o B.o ${code}
