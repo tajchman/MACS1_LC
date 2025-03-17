@@ -6,3 +6,5 @@ foreach(v 2a 2b)
   install(TARGETS exec${v} DESTINATION .)
 endforeach()
 
+add_executable(exec2c main2c.c vecteur2.c)
+install(TARGETS exec2c DESTINATION .)

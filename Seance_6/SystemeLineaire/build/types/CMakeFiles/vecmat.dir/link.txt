@@ -1,2 +1,0 @@
-/usr/bin/ar qc libvecmat.a CMakeFiles/vecmat.dir/vecteur.c.o CMakeFiles/vecmat.dir/matrice.c.o
-/usr/bin/ranlib libvecmat.a

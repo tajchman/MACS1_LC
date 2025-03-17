@@ -11,11 +11,9 @@ typedef struct _vecteur Vecteur;
 
 void calcule(Vecteur z)
 {
-  const double X = 4.4;
-
   int i;
   for (i=0; i<z.n; i++)
-    z.c[i] = i*i*X;
+    z.c[i] = i*i*1.0;
 }
 
 void affiche(Vecteur x)
@@ -30,9 +28,7 @@ void affiche(Vecteur x)
 int main()
 {
   int N = 10;
-
-  Vecteur v = {"V", N, (double *) malloc(sizeof(double) * N)};
-  v.nom[0] = 'v';
+  Vecteur v= {"V", N, (double *) malloc(sizeof(double) * v.n)};
 
   calcule(v);
   affiche(v);

@@ -26,9 +26,6 @@ void alignement2()
     char c;
     char s1[51];
 
-    s3[40] = 'a';
-    s1[60] = 'b';
-
     size_t debut_s1 = (size_t) &s1, fin_s1 = debut_s1 + sizeof(s1) - 1;
     size_t debut_c = (size_t) &c, fin_c = debut_c + sizeof(c) - 1;
     size_t debut_s2 = (size_t) &s2, fin_s2 = debut_s2 + sizeof(s2) - 1;

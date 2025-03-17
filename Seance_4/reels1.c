@@ -4,7 +4,7 @@
 void affiche(char *type, size_t size,
              long double min, long double max, long double eps)
 {
-    printf("%12s: %3zd octets, min %10.3lg max %10.3lg epsilon %10.3lg\n", 
+    printf("%12s: %3zd octets, min %10.3llg max %10.3llg epsilon %10.3llg\n", 
            type, size, min, max, eps);
 }
 
@@ -15,9 +15,9 @@ int main()
     long double dd;
 
     affiche("float", sizeof(float), 
-            FLT_MIN, FLT_MAX, DBL_EPSILON);
+            FLT_MIN, FLT_MAX, FLT_EPSILON);
     affiche("double", sizeof(double), 
-            DBL_MIN, DBL_MAX, FLT_EPSILON);
+            DBL_MIN, DBL_MAX, DBL_EPSILON);
     affiche("long double", sizeof(long double), 
             LDBL_MIN, LDBL_MAX, LDBL_EPSILON);
 

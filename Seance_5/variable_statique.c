@@ -1,8 +1,5 @@
 #include <stdio.h>
 
-int b;
-int c = 1;
-
 int f()
 {
         static int a = 1;

@@ -1,3 +1,0 @@
-/home/marc/Sources/MACS1_LC_dev/Seance_6/SystemeLineaire/install/bin/code3
-/home/marc/Sources/MACS1_LC_dev/Seance_6/SystemeLineaire/install/data/plbuckle.mtx
-/home/marc/Sources/MACS1_LC_dev/Seance_6/SystemeLineaire/install/data/matrice1.data
