@@ -1,1 +1,0 @@
-double derivee(double (*p) (double), double x, double h);
