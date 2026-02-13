@@ -1,0 +1,6 @@
+{
+  "files.associations": {
+    "fibonacci.h": "c",
+    "string.h": "c"
+  }
+}
