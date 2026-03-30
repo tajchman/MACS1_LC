@@ -18,9 +18,9 @@ void matMul(const Matrix* A,
             const Matrix* B,
             Matrix* C)
 {
-  auto M = A->n;
-  auto K = A->m;
-  auto N = B->m;
+  size_t M = A->n;
+  size_t K = A->m;
+  size_t N = B->m;
 
   for (size_t ib=0; ib<M; ib += BLOCK)
     for (size_t kb=0; kb<K; kb += BLOCK)
